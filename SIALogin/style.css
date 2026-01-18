@@ -1,0 +1,98 @@
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+
+/* Body */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5;
+}
+
+/* Container split */
+.container {
+    display: flex;
+    width: 900px;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Left side panel */
+.left {
+    flex: 1;
+    background: linear-gradient(135deg, #4e69a2, #3b5998);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.left h1 { font-size: 48px; margin-bottom: 20px; }
+.left p { font-size: 18px; line-height: 1.5; }
+
+/* Right side form */
+.right {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right h2 { margin-bottom: 25px; color: #333; }
+
+/* Inputs */
+form input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #3b5998;
+}
+
+/* Buttons */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #3b5998;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover { background: #2d4373; }
+
+/* Messages */
+.message {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.error { background: #fde2e2; color: #b91c1c; }
+.success { background: #dcfce7; color: #166534; }
+
+/* Links */
+.link { text-align: center; margin-top: 10px; }
+.link a { text-decoration: none; color: #3b5998; }
+
+/* Responsive */
+@media(max-width:800px){
+    .container { flex-direction: column; width: 90%; }
+    .left, .right { padding: 30px; text-align: center; }
+    .left h1 { font-size: 36px; }
+}
